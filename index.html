@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!-- bower_components:css-->
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+</head>
+
+<body ng-app="myApp">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- view -->
+    <div class="container">
+        <div ui-view></div>
+    </div>
+</body>
+<!-- bower_components:js -->
+<script type="text/javascript" src="lib/js/angular.min.js"></script>
+<script type="text/javascript" src="lib/js/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+<!-- foundation -->
+<script type="text/javascript" src="src/foundation/route.js"></script>
+<!-- widgets  -->
+<script type="text/javascript" src="src/widgets/home/home-controller.js"></script>
+<script type="text/javascript" src="src/widgets/login/login-controller.js"></script>
+<script type="text/javascript" src="src/widgets/sign-up/sign-up-controller.js"></script>
+
+</html>

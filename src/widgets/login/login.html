@@ -1,0 +1,33 @@
+<div class="formHolder" ng-controller="loginController as loginCtrl">
+    <div class="formBody">
+        <form name="adduserForm" class="form-horizontal" id="adduserForm" novalidate="">
+
+            <div class="form-group">
+                <label for="firstName" class="col-sm-4 control-label">Email</label>
+                <div class="col-sm-6">
+                    <input class="form-control" 
+                        name="firstName"
+                        ng-model="loginCtrl.customer.email"
+                        type="text"
+                        placeholder="Enter your Name" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-4 control-label">Password</label>
+                <div class="col-sm-6">
+                    <input class="form-control" 
+                        name="firstName"
+                        ng-model="loginCtrl.customer.password"
+                        type="password"
+                        placeholder="Enter your Password" required/>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-6">
+                    <button class="btn btn-primary">&nbsp; Login &nbsp;</button>
+                </div>
+            </div>                    
+    	</form>
+	</div>
+</div>
